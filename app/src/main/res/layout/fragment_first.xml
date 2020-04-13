@@ -9,23 +9,29 @@
 
     <TextView
         android:id="@+id/textview_first"
-        android:layout_width="130dp"
-        android:layout_height="26dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
         android:text="@string/hello_first_fragment"
         android:textColor="@android:color/white"
+        android:textSize="72sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+
 
     <Button
         android:id="@+id/random_button"
         android:layout_width="104dp"
         android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/buttonBackground"
         android:text="@string/random_button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,16 +41,19 @@
         android:id="@+id/toast_button"
         android:layout_width="104dp"
         android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/buttonBackground"
         android:text="@string/toast_button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/count_button"
         android:layout_width="104dp"
         android:layout_height="62dp"
         android:text="@string/count_button"
+        android:background="@color/buttonBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/random_button"
         app:layout_constraintStart_toEndOf="@+id/toast_button"
